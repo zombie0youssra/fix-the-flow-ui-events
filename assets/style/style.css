@@ -79,3 +79,53 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+/*animatie 1 kleur vernaderen*/
+
+a:nth-of-type(1) {
+  position: relative;
+  
+}
+
+.colorpop{
+  background-color: rgb(255, 70, 184);
+  border-color: #ffacfb;
+  color: #ffacfb;
+}
+
+/*animatie 2 gradient*/
+
+.bordergradient{
+ opacity: 0;
+}
+
+/*animatie 3 shaking vernaderen*/
+.shake{
+
+ animation-name: shake;
+ animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+ animation-duration: 1.2s;
+ animation-iteration-count: 1;
+}
+
+@keyframes shake{
+10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

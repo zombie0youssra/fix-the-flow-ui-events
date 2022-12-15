@@ -98,7 +98,7 @@ a:nth-of-type(1) {
  opacity: 0;
 }
 
-/*animatie 3 shaking vernaderen*/
+/*animatie 3 shake*/
 .shake{
 
  animation-name: shake;
@@ -129,3 +129,8 @@ a:nth-of-type(1) {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+.btn-4 {
+  
+}
+

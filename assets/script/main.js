@@ -31,3 +31,11 @@ and.addEventListener('animationend', shakebutton)
 function shakebutton() {
   and.classList.toggle('shake')
 }
+
+let development = document.querySelector('a:nth-of-type(4)')
+
+development.addEventListener('click', buttonfade)
+
+function buttonfade(){
+  development.classList.toggle('.btn-4')
+}

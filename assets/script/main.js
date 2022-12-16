@@ -18,6 +18,7 @@ function colorchange(){
 let design = document.querySelector('a:nth-of-type(2)')
 
 design.addEventListener('click',gradientcolor)
+design.addEventListener('animationend', gradientcolor)
 
 function gradientcolor(){
   design.classList.toggle('bordergradient')

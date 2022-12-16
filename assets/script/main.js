@@ -37,5 +37,13 @@ let development = document.querySelector('a:nth-of-type(4)')
 development.addEventListener('click', buttonfade)
 
 function buttonfade(){
-  development.classList.toggle('.btn-4')
+  development.classList.toggle('btn-4')
+}
+
+let sprint = document.querySelector('a:nth-of-type(4)')
+
+sprint.addEventListener('click', buttonfade)
+
+function buttonfade(){
+  development.classList.toggle('btn-4')
 }

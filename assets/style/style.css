@@ -131,6 +131,10 @@ a:nth-of-type(1) {
 }
 
 .btn-4 {
-  
+  opacity: 0;
+  transition: 3s;
 }
 
+.btn-5{
+  
+}

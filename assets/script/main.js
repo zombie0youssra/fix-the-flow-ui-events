@@ -41,18 +41,50 @@ function buttonfade() {
   development.classList.toggle("btn-4");
 }
 
-let sprint = document.querySelector("a:nth-of-type(4)");
+let sprint = document.querySelector("a:nth-of-type(5)");
 
-sprint.addEventListener("click", buttonfade);
+sprint.addEventListener("click", rainbow);
 
-function buttonfade() {
-  sprint.classList.toggle("btn-4");
+function rainbow() {
+  sprint.classList.toggle("btn-5");
 }
 
-let fix = document.querySelector("a:nth-of-type(5)");
+let fix = document.querySelector("a:nth-of-type(6)");
 
-fix.addEventListener("click", buttonfade);
+fix.addEventListener("click", hulk);
 
-function buttonfade() {
-  fix.classList.toggle("btn-5");
+function hulk() {
+  fix.classList.toggle("btn-6");
+}
+
+let the = document.querySelector("a:nth-of-type(7)");
+
+the.addEventListener("click", halo);
+
+function halo() {
+  the.classList.toggle("btn-7");
+}
+
+let flow = document.querySelector("a:nth-of-type(8)");
+
+flow.addEventListener("click", down);
+
+function down() {
+  flow.classList.toggle("btn-8");
+}
+
+let user = document.querySelector("a:nth-of-type(9)");
+
+user.addEventListener("click", down);
+
+function down() {
+  user.classList.toggle("btn-9");
+}
+
+let interface = document.querySelector("a:nth-of-type(10)");
+
+interface.addEventListener("click", down);
+
+function down() {
+  interface.classList.toggle("btn-10");
 }

@@ -133,47 +133,143 @@ a:nth-of-type(1) {
 .btn-4 {
   opacity: 0;
   transition: 3s;
+  color: #ffacfb;
 }
 
 .btn-5{
-  animation-name: rainbow;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes btn-5{
-  20%{
-    color: red;
-
-  }
-
-  40%{
-    color: orange;
-
-  }
-
-  55%{
-color: yellow;
-  }
-
-  70%{
-color: greenyellow;
-  }
-
-  85%{
-    color: green;
-
-  }
-
-  90%{
-    color: blue;
-
-  }
-
-  100%{
-    color: blueviolet;
-
-  }
-
+  color: rgb(255, 255, 255);
+    animation-name: rainbow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 
 }
+
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+
+     10% {
+       background-color: orange;
+     }
+
+  25% {
+    background-color: yellow;
+  }
+
+
+  30%{
+    background-color: greenyellow;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  70% {
+    background-color: blue;
+  }
+
+  80%{
+    background-color: blueviolet;
+  }
+}
+
+.btn-6{
+   animation-name: hulk;
+   animation-duration: 3s;
+
+}
+
+@keyframes hulk {
+0% {
+    background-color: rgb(65, 255, 65);
+    margin-left: 0em;
+  }
+
+  20% {
+    background-color: rgb(20, 253, 20);
+    margin-left: 1em;
+  }
+
+
+  40% {
+    background-color: rgb(15, 228, 15);
+    margin-right: 1em;
+  }
+
+  80% {
+    background-color: rgb(12, 121, 12);
+  }
+
+
+  100% {
+    background-color: rgb(12, 92, 12);
+  }
+
+}
+
+.btn-7{
+  animation-name: halo;
+  animation-duration: 2s;
+
+}
+
+
+@keyframes halo {
+  0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-100px);
+      color: rgb(255, 255, 255);
+      border-color: white;
+      box-shadow: #fff 1em 1em 90em 10em;
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.btn-8{
+  animation-name: down;
+    animation-duration: 3s;
+}
+
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(100px);
+    color: rgb(0, 0, 0);
+    border-color: rgb(71, 71, 71);
+    background-color: black;
+    box-shadow: rgb(0, 0, 0) 1em 1em 90em 10em;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn-9{
+animation-name: eyes;
+  animation-duration: 3s;
+}
+
+@keyframes eyes {
+  20%{}
+}
+
+
+
+.btn-10{
+  animation-name: down;
+    animation-duration: 3s;
+  }

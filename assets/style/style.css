@@ -136,5 +136,44 @@ a:nth-of-type(1) {
 }
 
 .btn-5{
-  
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btn-5{
+  20%{
+    color: red;
+
+  }
+
+  40%{
+    color: orange;
+
+  }
+
+  55%{
+color: yellow;
+  }
+
+  70%{
+color: greenyellow;
+  }
+
+  85%{
+    color: green;
+
+  }
+
+  90%{
+    color: blue;
+
+  }
+
+  100%{
+    color: blueviolet;
+
+  }
+
+
 }

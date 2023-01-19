@@ -212,7 +212,7 @@ a:nth-of-type(1) {
 
 .btn-7{
   animation-name: halo;
-  animation-duration: 2s;
+  animation-duration: 1s;
 
 }
 
@@ -236,7 +236,7 @@ a:nth-of-type(1) {
 
 .btn-8{
   animation-name: down;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 
 
@@ -260,16 +260,48 @@ a:nth-of-type(1) {
 
 .btn-9{
 animation-name: eyes;
-  animation-duration: 3s;
+  animation-duration: 8s;
 }
 
 @keyframes eyes {
-  20%{}
+  0%{ background-color: #050840;}
+  20%{ background-image: url(../giphy.gif);
+  width: 16em;
+height: 12em;}
+  40%{background-color: yellow;}
+  100%{ transform: rotateY('2');}
 }
 
 
 
 .btn-10{
-  animation-name: down;
+  animation-name: flip;
     animation-duration: 3s;
+  }
+
+  @keyframes flip {
+      0% {
+          transform: perspective(400px) rotateY(0);
+          animation-timing-function: ease-out;
+        }
+      
+        40% {
+          transform: perspective(400px) translateZ(150px) rotateY(170deg);
+          animation-timing-function: ease-out;
+        }
+      
+        50% {
+          transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+          animation-timing-function: ease-in;
+        }
+      
+        80% {
+          transform: perspective(400px) rotateY(360deg) scale(.95);
+          animation-timing-function: ease-in;
+        }
+      
+        100% {
+          transform: perspective(400px) scale(1);
+          animation-timing-function: ease-in;
+        }
   }

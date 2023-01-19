@@ -75,16 +75,16 @@ function down() {
 
 let user = document.querySelector("a:nth-of-type(9)");
 
-user.addEventListener("click", down);
+user.addEventListener("click", eyes);
 
-function down() {
+function eyes() {
   user.classList.toggle("btn-9");
 }
 
 let interface = document.querySelector("a:nth-of-type(10)");
 
-interface.addEventListener("click", down);
+interface.addEventListener("click", flip);
 
-function down() {
+function flip() {
   interface.classList.toggle("btn-10");
 }

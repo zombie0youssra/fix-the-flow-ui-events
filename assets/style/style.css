@@ -198,9 +198,147 @@ a:nth-of-type(1) {
       color: blueviolet;
     }
   }
-
-    .btn-6 {
-      animation-name: bounce;
-      animation-duration: 1s;
+  
+  
+  .btn-6 {
+      animation-name:rgb;
+      animation-duration: 2s;
       animation-iteration-count: infinite;
     }
+    
+
+    @keyframes rgb {
+      10% {
+          color: red;
+        }
+      
+        30% {
+          color: orange;
+        }
+      
+        45% {
+          color: yellow;
+        }
+      
+        55% {
+          color: yellowgreen;
+        }
+      
+        70% {
+          color: green;
+        }
+      
+        80% {
+          color: blue;
+        }
+      
+        100% {
+          color: blueviolet;
+        }
+    }
+
+         .btn-7 {
+           animation-name: bounce;
+           animation-duration: 2s;
+           animation-iteration-count: 1;
+         }
+
+         @keyframes bounce {
+          0% {
+              transform: translate(11em, 2em) rotate(0deg);
+            }
+          
+            40% {
+              transform: translate(10em, 3em) rotate(1deg);
+            }
+          
+            50% {
+              transform: translate(9em, 3em) rotate(2deg);
+            }
+          
+            60% {
+              transform: translate(8em, 2em) rotate(-4deg);
+            }
+          
+            70% {
+              transform: translate(8em, 2em) rotate(-4deg);
+            }
+          
+            80% {
+              transform: translate(6em, 3em) rotate(2deg);
+            }
+          
+            90% {
+              transform: translate(6em, 3em) rotate(2deg);
+            }
+          
+            100% {
+              transform: translate(4em, 2em) rotate(2deg);
+            }
+         }
+
+
+
+         .btn-8{
+          animation-name: flip;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+         }
+
+         @keyframes flip {
+          0% {
+              transform: perspective(400px) rotateY(0);
+              animation-timing-function: ease-out;
+            }
+          
+            40% {
+              transform: perspective(400px) translateZ(150px) rotateY(170deg);
+              animation-timing-function: ease-out;
+            }
+          
+            50% {
+              transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+              animation-timing-function: ease-in;
+            }
+          
+            80% {
+              transform: perspective(400px) rotateY(360deg) scale(.95);
+              animation-timing-function: ease-in;
+            }
+          
+            100% {
+              transform: perspective(400px) scale(1);
+              animation-timing-function: ease-in;
+            }
+         }
+
+         .btn-9{
+          animation-name: rotate;
+          animation-duration: 2s ;
+          animation-iteration-count: 1;
+
+         }
+
+         @keyframes rotate {
+           0% {
+    transform: rotate(90deg)
+  }
+  
+  100% {
+    transform: rotate(360deg)
+  }
+         }
+
+
+                 .btn-10 {
+                   animation-name: lightoff;
+                   animation-duration: 2s;
+                   animation-iteration-count: infinite;
+                 }
+
+                 @keyframes lightoff {
+                  0%{
+                    background-color: black ;
+                  }
+                  
+                 }

@@ -49,8 +49,40 @@ function rainbow() {
 
 let fix = document.querySelector("a:nth-of-type(6)");
 
-fix.addEventListener("click", bounce);
+fix.addEventListener("click", rgb);
+
+function rgb() {
+  fix.classList.toggle("btn-6");
+}
+
+let the = document.querySelector("a:nth-of-type(7)");
+
+the.addEventListener("click", bounce);
 
 function bounce() {
-  fix.classList.toggle("btn-6");
+  the.classList.toggle("btn-7");
+}
+
+let flow = document.querySelector("a:nth-of-type(8)");
+
+flow.addEventListener("click", flip);
+
+function flip() {
+  flow.classList.toggle("btn-8");
+}
+
+let user = document.querySelector("a:nth-of-type(9)");
+
+user.addEventListener("click", rotate);
+
+function rotate() {
+  user.classList.toggle("btn-9");
+}
+
+let interface = document.querySelector("a:nth-of-type(10)");
+
+interface.addEventListener("click", lightoff);
+
+function lightoff() {
+  interface.classList.toggle("btn-10");
 }
